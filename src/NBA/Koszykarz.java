@@ -10,7 +10,8 @@ public class Koszykarz {
     double zarobki;
     int numery[];
 
-    final static double salary = 94;
+    /*final*/ static double salary = 94;
+    double nSalary;
 
     Koszykarz(String imieNazwisko, int zarobki, int numery[]){
         this.imieNazwisko = imieNazwisko;
@@ -53,9 +54,11 @@ public class Koszykarz {
             ile++;
         }
 
-        System.out.println("Zawodnikiem " + imieNazwisko + ", który nosił " + ile + " numerów na koszulce, interesuje się klub " + klub);
+        System.out.println("Zawodnikiem " + imieNazwisko + ", który nosił " + ile + " nr na koszulce, interesuje się klub " + klub);
     }
 
 
-
+    public void noweSalary(double nSalary){
+        salary=nSalary;
+    }
 }
